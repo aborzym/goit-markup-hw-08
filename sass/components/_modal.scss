@@ -116,7 +116,6 @@
 }
 
 .modal-send-btn {
-  @extend %button;
   @include button-typeface(700, 1.875, 0.06em);
   display: flex;
   margin: auto;

@@ -35,6 +35,6 @@
   }
   &__mail,
   &__phone {
-    @extend %link-grey;
+    @extend .link-grey;
   }
 }

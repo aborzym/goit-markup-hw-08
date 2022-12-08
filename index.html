@@ -15,35 +15,43 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css"
     />
-    <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
     <!-- =============== HEADER ================  -->
 
-    <header>
-      <div class="header">
+    <header class="header-underline">
+      <div class="header container">
         <div class="menu">
           <a class="logo" href="#"
             >Web
             <span class="logo--black">Studio</span>
           </a>
           <nav class="navigation">
-            <ul class="main-navigation">
+            <ul class="main-navigation list">
               <li>
-                <a class="main-navigation__item--active" href="#">Agencja</a>
+                <a
+                  class="main-navigation__item--active active-page link"
+                  href="#"
+                  >Agencja</a
+                >
               </li>
               <li>
-                <a class="main-navigation__item" href="portfolio.html"
+                <a class="main-navigation__item link" href="portfolio.html"
                   >Portfolio</a
                 >
               </li>
-              <li><a class="main-navigation__item" href="#">Kontakt</a></li>
+              <li>
+                <a class="main-navigation__item link" href="#">Kontakt</a>
+              </li>
             </ul>
           </nav>
-          <ul class="header-contact">
+          <ul class="header-contact list">
             <li>
-              <a class="header-contact__item" href="mailto:info@devstudio.com">
+              <a
+                class="header-contact__item link-grey"
+                href="mailto:info@devstudio.com"
+              >
                 <svg class="header-contact__icon">
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
@@ -51,7 +59,7 @@
               >
             </li>
             <li>
-              <a class="header-contact__item" href="tel:+48111111111">
+              <a class="header-contact__item link-grey" href="tel:+48111111111">
                 <svg class="header-contact__icon--right">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
@@ -59,18 +67,26 @@
               >
             </li>
           </ul>
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#icon-nav-mobile"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
 
     <!-- =============== MAIN - TOP ================  -->
-
     <main>
       <section class="main-top">
         <h1 class="main-top__slogan">
           Efektywne rozwiązania dla waszego biznesu
         </h1>
-        <button type="button" class="main-top__button" data-modal-open>
+        <button type="button" class="main-top__button button" data-modal-open>
           Zamów usługę
         </button>
 
@@ -145,9 +161,9 @@
                   </label>
                 </div>
 
-                <!-- =============== MODAL CHECKBOX/STATEMENT ================  -->
+        <!-- =============== MODAL CHECKBOX/STATEMENT ================  -->
 
-                <div class="statement">
+        <div class="statement">
                   <label for="checkbox" class="statement__label">
                     <span
                       ><input
@@ -175,72 +191,74 @@
                     </span>
                   </label>
                 </div>
-                <button type="submit" class="modal-send-btn">Wyślij</button>
+                <button type="submit" class="modal-send-btn button">
+                  Wyślij
+                </button>
               </form>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- =============== OUR STRENGTHS ================  -->
+        <!-- =============== OUR STRENGTHS ================  -->
 
-      <section>
-        <div class="our-strengths">
-          <ul class="our-strengths-cards">
-            <li class="our-strengths-card">
-              <div class="our-strengths-card__icon">
-                <svg width="70" height="70">
-                  <use href="./images/icons.svg#icon-antenna"></use>
-                </svg>
-              </div>
-              <p class="our-strengths-card__title">LOREM IPSUM</p>
-              <p class="our-strengths-card__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                arcu sem. Sed non sodales dui. Interdum et malesuada
-              </p>
-            </li>
-            <li class="our-strengths-card">
-              <div class="our-strengths-card__icon">
-                <svg width="70" height="70">
-                  <use href="./images/icons.svg#icon-clock"></use>
-                </svg>
-              </div>
-              <p class="our-strengths-card__title">LOREM IPSUM</p>
-              <p class="our-strengths-card__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                arcu sem. Sed non sodales dui. Interdum et malesuada
-              </p>
-            </li>
-            <li class="our-strengths-card">
-              <div class="our-strengths-card__icon">
-                <svg width="70" height="70">
-                  <use href="./images/icons.svg#icon-diagram"></use>
-                </svg>
-              </div>
-              <p class="our-strengths-card__title">LOREM IPSUM</p>
-              <p class="our-strengths-card__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                arcu sem. Sed non sodales dui. Interdum et malesuada
-              </p>
-            </li>
-            <li class="our-strengths-card">
-              <div class="our-strengths-card__icon">
-                <svg width="70" height="70">
-                  <use href="./images/icons.svg#icon-astronaut"></use>
-                </svg>
-              </div>
-              <p class="our-strengths-card__title">LOREM IPSUM</p>
-              <p class="our-strengths-card__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                arcu sem. Sed non sodales dui. Interdum et malesuada
-              </p>
-            </li>
-          </ul>
-        </div>
-
+        <section>
+          <div class="our-strengths container">
+            <ul class="our-strengths-cards list container">
+              <li class="our-strengths-card">
+                <div class="our-strengths-card__icon">
+                  <svg width="70" height="70">
+                    <use href="./images/icons.svg#icon-antenna"></use>
+                  </svg>
+                </div>
+                <p class="our-strengths-card__title">LOREM IPSUM</p>
+                <p class="our-strengths-card__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                </p>
+              </li>
+              <li class="our-strengths-card">
+                <div class="our-strengths-card__icon">
+                  <svg width="70" height="70">
+                    <use href="./images/icons.svg#icon-clock"></use>
+                  </svg>
+                </div>
+                <p class="our-strengths-card__title">LOREM IPSUM</p>
+                <p class="our-strengths-card__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                </p>
+              </li>
+              <li class="our-strengths-card">
+                <div class="our-strengths-card__icon">
+                  <svg width="70" height="70">
+                    <use href="./images/icons.svg#icon-diagram"></use>
+                  </svg>
+                </div>
+                <p class="our-strengths-card__title">LOREM IPSUM</p>
+                <p class="our-strengths-card__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                </p>
+              </li>
+              <li class="our-strengths-card">
+                <div class="our-strengths-card__icon">
+                  <svg width="70" height="70">
+                    <use href="./images/icons.svg#icon-astronaut"></use>
+                  </svg>
+                </div>
+                <p class="our-strengths-card__title">LOREM IPSUM</p>
+                <p class="our-strengths-card__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
         <!-- =============== WHAT WE DO ================  -->
 
-        <div class="what-we-do">
+        <!-- <div class="what-we-do container section">
           <h2 class="what-we-do__title">Czym się zajmujemy</h2>
           <ul class="what-we-do-cards">
             <li class="what-we-do-card">
@@ -263,14 +281,14 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <!-- =============== OUR TEAM ================  -->
+        <!-- =============== OUR TEAM ================  -->
 
-      <section class="main-bottom">
-        <div class="our-team">
+        <!-- <section class="main-bottom">
+        <div class="our-team section container">
           <h2 class="our-team__title">Nasz zespół</h2>
-          <ul class="our-team-cards">
+          <ul class="our-team-cards list">
             <li class="our-team-card">
               <figure class="our-team-card__photo">
                 <img
@@ -481,11 +499,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <!-- =============== OUR CLIENTS ================  -->
+        <!-- =============== OUR CLIENTS ================  -->
 
-      <section>
+        <!-- <section>
         <div class="our-clients">
           <h2 class="our-clients__title">Nasi klienci</h2>
           <ul class="our-clients-cards">
@@ -532,15 +550,15 @@
               </a>
             </li>
           </ul>
-        </div>
+        </div>-->
       </section>
     </main>
 
     <!-- =============== FOOTER ================  -->
 
-    <footer class="footer">
+    <!--<footer class="footer">
       <section class="footer-container">
-        <div class="footer-left-block">
+         <div class="footer-left-block">
           <a class="logo" href="#"
             >Web <span class="logo--white">Studio</span></a
           >
@@ -563,11 +581,11 @@
               </li>
             </ul>
           </address>
-        </div>
+        </div> -->
 
-        <!-- =============== FOOTER SOCIALS ================  -->
+    <!-- =============== FOOTER SOCIALS ================  -->
 
-        <div class="footer-socials">
+    <!-- <div class="footer-socials">
           <h4 class="footer-socials__title">Dołącz do nas</h4>
           <ul class="footer-social-list">
             <li>
@@ -599,11 +617,11 @@
               </a>
             </li>
           </ul>
-        </div>
+        </div> -->
 
-        <!-- =============== FOOTER NEWSLETTER ================  -->
+    <!-- =============== FOOTER NEWSLETTER ================  -->
 
-        <div class="footer-newsletter">
+    <!-- <div class="footer-newsletter">
           <h4 class="footer-newsletter__title">Zapisz się do newslettera</h4>
           <div class="footer-input">
             <form class="footer-input__form">
@@ -617,7 +635,7 @@
                 />
               </label>
             </form>
-            <button type="submit" class="footer-input__button">
+            <button type="submit" class="footer-input__button button">
               Zapisz się
               <svg class="footer-input__button-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
@@ -626,7 +644,74 @@
           </div>
         </div>
       </section>
-    </footer>
+    </footer> -->
+    <!-- =============== MOBILE MENU ================  -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <div class="mobile-menu">
+        <ul class="mobile-menu__list-nav">
+          <li class="mobile-menu__list-item">
+            <a class="link" href="./index.html" class="link">Agencja</a>
+          </li>
+          <li class="mobile-menu__list-item">
+            <a class="link" href="./portfolio.html" class="link">Portfolio</a>
+          </li>
+          <li class="mobile-menu__list-item">
+            <a class="link" href="#" class="link">Kontakt</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-menu__list-contacts">
+          <li class="mobile-menu__list-contacts--phone">
+            <a class="link-blue" href="tel:+48111111111">+48 111 111 111</a>
+          </li>
+          <li class="mobile-menu__list-contacts--mail">
+            <a class="link-grey" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-menu__list-socials list">
+          <li class="mobile-menu__list-socials-item">
+            <a class="link-blue" href="#">Instagram</a>
+          </li>
+          <li class="mobile-menu__list-socials-item link-blue">
+            <a class="link-blue" href="#">Twitter</a>
+          </li>
+          <li class="mobile-menu__list-socials-item link-blue">
+            <a class="link-blue" href="#">Facebook</a>
+          </li>
+          <li class="mobile-menu__list-socials-item link-blue">
+            <a class="link-blue" href="#">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

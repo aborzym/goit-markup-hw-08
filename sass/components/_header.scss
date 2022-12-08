@@ -1,4 +1,7 @@
-.header {
-  @extend %container;
+.header-underline {
   border-bottom: 1px solid $header-border;
+}
+
+.header {
+  position: relative;
 }
