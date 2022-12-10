@@ -13,6 +13,14 @@
   max-width: 767px;
   @media screen and (min-width: $tablet) {
     max-width: 1199px;
+    background: linear-gradient(
+        $main-image-linear-gradient,
+        $main-image-linear-gradient
+      ),
+      url(../../images/header_background_tablet@1x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   @media screen and (min-width: $desktop) {
     padding: 200px 0;
