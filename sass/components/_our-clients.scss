@@ -12,7 +12,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: space-between;
+  justify-content: center;
   @media screen and (min-width: $desktop) {
     flex-wrap: nowrap;
   }

@@ -9,22 +9,31 @@
   font-size: 24px;
   line-height: 1.17;
 
+  @media screen and (min-width: $tablet) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    font-size: 26px;
+    line-height: 1.19;
+  }
   &--black {
     color: $black;
   }
   &--white {
     color: $white;
-
-    @media screen and (min-width: $tablet) {
-      padding-top: 26px;
-      padding-bottom: 26px;
-    }
-
-    @media screen and (min-width: $desktop) {
-      padding-top: 24px;
-      padding-bottom: 25px;
-      font-size: 26px;
-      line-height: 1.19;
-    }
   }
+}
+
+.logo-footer {
+  display: flex;
+  text-decoration: none;
+  color: $blue;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
 }
