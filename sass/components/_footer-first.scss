@@ -13,13 +13,13 @@
     flex-wrap: wrap;
     justify-content: center;
     column-gap: 144px;
+    align-items: flex-start;
   }
   @media screen and(min-width: $desktop) {
-    display: flex;
-    flex-wrap: nowrap;
     align-items: baseline;
-    justify-items: flex-start;
-    max-width: 100%;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 0;
   }
 }
 .footer-first-block {
